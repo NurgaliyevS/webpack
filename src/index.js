@@ -1,8 +1,11 @@
 import generateJoke from "./generateJoke";
 import './styles/main.scss'
+import laughing  from './assets/laughing.svg'
 
-const sum = (a, b) => a + b;
+const laughImg = document.getElementById('laughImg')
+laughImg.src = laughing
 
-console.log(sum(5, 10))
+const jokeBtn = document.getElementById('jokeBtn')
+jokeBtn.addEventListener('click', generateJoke)
 
-console.log(generateJoke())
+generateJoke()
